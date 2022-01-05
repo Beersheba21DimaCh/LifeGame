@@ -2,6 +2,8 @@ export function getRandomNumber(min: number, max:number):number{
     if(max < min){
         [max, min] = [min, max];
     }
+    // let rnd = Math.round(min + Math.random()*(max - min));
+    // return Math.round(Math.random()*100) < 100 ? rnd : 0;
     return Math.round(min + Math.random()*(max - min));
 }
 
